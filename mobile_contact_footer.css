@@ -1,0 +1,48 @@
+#mobile-footer {
+	visibility: hidden;
+}
+
+.mcf_icon a{
+		color: green;
+	}
+
+@media screen and (max-width:700px){
+
+	footer{
+		visibility: hidden;
+		height: 70px;
+	}
+
+	#mobile-footer{
+		visibility: visible;
+		position: fixed;
+		bottom: 0;
+		height: 70px;
+		width: 100%;
+		z-index:999;
+		background-color: #555;
+	}
+	
+	.mcf_icon{
+		width: 25%;
+		float: left;
+		color: #999;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-height:500px){
+
+	#mobile-footer{
+			visibility: visible;
+			height: 50px;
+	}
+	.mcf_icon{
+		color: #999;
+		margin-top: 2px;
+		text-align: center;
+	}
+		
+}
