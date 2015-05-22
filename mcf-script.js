@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
     $('.mcf-color-picker1').hide();
 	$('.mcf-color-picker2').hide();
-    $('.mcf-color-picker1').farbtastic('#mcf_section_bg_color');
-	$('.mcf-color-picker2').farbtastic('#mcf_section_icon_color');
+    $('#mcf_section_bg_color').wpColorPicker();
+	$('#mcf_section_icon_color').wpColorPicker();
 
     $('#mcf_section_bg_color').click(function() {
 		if(!$('.mcf-color-field1').val()){

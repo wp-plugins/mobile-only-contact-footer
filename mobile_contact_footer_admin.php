@@ -319,18 +319,18 @@ function mcf_admin_include_style(){
 			plugins_url( 'font-awesome-4.3.0/css/font-awesome.min.css', __FILE__)
 			);
 	
-	wp_enqueue_style( 'farbtastic' );
-	wp_enqueue_script( 'farbtastic' );
+	wp_enqueue_style( 'wp-color-picker' );
+	wp_enqueue_script( 'wp-color-picker' );
     wp_enqueue_script( 
 			'mcf-script', 
 			plugins_url('mcf-script.js', __FILE__ ), 
-			array( 'farbtastic', 'jquery' )
+			array( 'wp-color-picker', 'jquery' )
 			);
 
 }
 
 if( is_admin() ){
     $mcf_admin_page = new MCF_AdminPage();
-	add_action( 'admin_enqueue_scripts', 'mcf_admin_include_style' );
 }
+add_action( 'admin_enqueue_scripts', 'mcf_admin_include_style' );
 
