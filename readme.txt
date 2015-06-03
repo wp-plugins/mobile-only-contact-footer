@@ -28,7 +28,9 @@ Not sure.
 
 == Screenshots ==
 
-None
+1.  The footer sticks to the bottom of the screen at all times.
+2.  The admin panel is found under settings.
+3.  The admin panel uses Font Awesome to choose icons.
 
 == Changelog ==
 
